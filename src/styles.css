@@ -1,0 +1,39 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+h1 {
+    text-align: center;
+}
+
+#events-container {
+    width: 80%;
+    margin: 20px auto;
+    padding: 10px;
+}
+
+#party-form {
+    width: 80%;
+    margin: 20px auto;
+    padding: 10px;
+}
+input, textarea {
+    width: 200px;
+    
+
+}
+
+.event {
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.event-name:hover {
+    text-decoration:underline;
+}
