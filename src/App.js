@@ -1,12 +1,11 @@
 import React, { useState, useEffect } from 'react';
-import './styles.css'; // Adjust the path according to your file structure
+import './styles.css'; 
 
 const API_ENDPOINT = "https://fsa-crud-2aa9294fe819.herokuapp.com/api/2309-AM/events";
 
 function App() {
     const [events, setEvents] = useState([]);
 
-    // Fetch events from API
     useEffect(() => {
         fetchEvents();
     }, []);
@@ -31,16 +30,14 @@ function App() {
         event.preventDefault();
 
         const formData = new FormData(event.target);
-        // for (let [key, value] of formData.entries()) {
-        //   console.log('key, value');
-        // };
+
         console.log(formData);
         const newParty = {
             name: formData.get('party-name'),
             date: formData.get('party-date'),
             description: formData.get('party-description'),
             location: formData.get('party-location'),
-            cohortId: 2, // Assuming cohortId is constant or handled elsewhere
+            cohortId: 2, 
         };
         console.log(newParty);
         try {
